@@ -1,0 +1,1 @@
+There's no number between 1-10 whose squar's last digit is 3!
