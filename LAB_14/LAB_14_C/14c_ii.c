@@ -4,7 +4,7 @@ int main() {
     int arr[10];
     int n, i, j;
 
-    printf("Enter the number of elements (up to 10): ");
+    printf("Enter the number of elements (up to 10n): ");
     scanf("%d", &n);
 
     printf("Enter %d numbers in ascending order:\n", n);

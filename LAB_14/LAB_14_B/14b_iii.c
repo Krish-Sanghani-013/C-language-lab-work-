@@ -1,32 +1,35 @@
 #include <stdio.h>
-
-int main() {
+int main()
+{
     int arr[10];
     int n, i, j, temp;
 
-    printf("Enter the number of elements (up to 10): ");
+    printf("Enter the number of elements (up to 10n): ");
     scanf("%d", &n);
 
     printf("Enter %d numbers:\n", n);
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < n; i++)
+    {
         scanf("%d", &arr[i]);
     }
 
-    for (i = 0; i < n - 1; i++) {
-        for (j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+    for (i = 0; i < n - 1; i++)
+    {
+        for (j = i + 1; j < n; j++)
+        {
+            if (arr[i] > arr[j])
+            {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
     }
-
     printf("Sorted array in ascending order:\n");
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < n; i++)
+    {
         printf("%d ", arr[i]);
     }
-    printf("\n");
 
     return 0;
 }
