@@ -2,7 +2,8 @@
 
 int fact(int n)
 {
-    int i, f = 1;
+    int i;
+    int f = 1;
     for (i = 1; i <= n; i++)
     {
         f = f * i;
